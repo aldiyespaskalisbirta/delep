@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { PT_Serif } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const pt_serif = PT_Serif({ weight: ["400"], preload: false });
 
 export const metadata: Metadata = {
   title: "IYESS | ELEPP",
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${pt_serif.className} max-h-screen`}>{children}</body>
     </html>
   );
 }
