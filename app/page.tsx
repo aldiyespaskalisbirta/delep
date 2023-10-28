@@ -42,7 +42,7 @@ export default async function Home() {
             <div></div>
             <div></div>
           </div>
-          <p className="text-center md:w-1/2 text-2xl md:text-4xl leading-snug font-semibold text-white mt-10">
+          <p className="text-center text-2xl md:text-4xl leading-snug font-semibold text-white mt-10">
             {quote[0].quote.toUpperCase()}
           </p>
           <span className="absolute bottom-10 text-2xl md:text-4xl text-white mt-8">
