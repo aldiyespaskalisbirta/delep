@@ -19,6 +19,10 @@ function CountTime() {
     };
   }, []); // Empty dependency array ensures the effect runs only once
 
+  const formatNumber = (number: number) => {
+    return number < 10 ? `0${number}` : `${number}`;
+  };
+
   const millisecondsPerSecond: number = 1000;
   const millisecondsPerMinute: number = millisecondsPerSecond * 60;
   const millisecondsPerHour: number = millisecondsPerMinute * 60;
@@ -43,25 +47,22 @@ function CountTime() {
   return (
     <div className="w-full h-full flex items-center justify-center bg-transparent z-50 absolute">
       <div className="flex gap-4">
-        <Card className="w-24 h-24 flex items-center flex-col gap-2 justify-center opacity-75">
-          <h1 className="text-xl font-semibold">Days</h1>
-          <span className="text-2xl font-bold">{days}</span>
+        <Card className="w-20 h-20 md:w-24 md:h-24 flex items-center flex-col gap-2 justify-center opacity-75">
+          <h1 className="text-lg md:text-xl font-semibold">Days</h1>
+          <span className="text-2xl font-bold">{formatNumber(days)}</span>
         </Card>
-        <Card className="w-24 h-24 flex items-center flex-col gap-2 justify-center opacity-75">
-          <h1 className="text-xl font-semibold">Hours</h1>
-          <span className="text-2xl font-bold">{hours}</span>
+        <Card className="w-20 h-20 md:w-24 md:h-24 flex items-center flex-col gap-2 justify-center opacity-75">
+          <h1 className="text-lg md:text-xl font-semibold">Hours</h1>
+          <span className="text-2xl font-bold">{formatNumber(hours)}</span>
         </Card>
-        <Card className="w-24 h-24 flex items-center flex-col gap-2 justify-center opacity-75">
-          <h1 className="text-xl font-semibold">Minutes</h1>
-          <span className="text-2xl font-bold">{minutes}</span>
+        <Card className="w-20 h-20 md:w-24 md:h-24 flex items-center flex-col gap-2 justify-center opacity-75">
+          <h1 className="text-lg md:text-xl font-semibold">Minutes</h1>
+          <span className="text-2xl font-bold">{formatNumber(minutes)}</span>
         </Card>
-        <Card className="w-24 h-24 flex items-center flex-col gap-2 justify-center opacity-75">
-          <h1 className="text-xl font-semibold">Seconds</h1>
-          <span className="text-2xl font-bold">{seconds}</span>
+        <Card className="w-20 h-20 md:w-24 md:h-24 flex items-center flex-col gap-2 justify-center opacity-75">
+          <h1 className="text-lg md:text-xl font-semibold">Seconds</h1>
+          <span className="text-2xl font-bold">{formatNumber(seconds)}</span>
         </Card>
-        {/* <Card classNa24="w242 h-12 flex flex-col gap-2 items-center justify opacity-75-center">
-        <h1 className="text-xl font-semibold">Days</h1>
-        <span className="text-2xl font-bold">{days}</span></Card> */}
       </div>
     </div>
   );

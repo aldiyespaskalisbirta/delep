@@ -5,7 +5,9 @@ import Image from "next/image";
 function CarouselSlider() {
   return (
     <Carousel
-      //   transition={{ duration: 0.5 }}
+      prevArrow={({ handlePrev }) => <div></div>}
+      nextArrow={({ handleNext }) => <div></div>}
+      navigation={({ setActiveIndex, activeIndex, length }) => <div></div>}
       autoplay={true}
       //   autoplayDelay={2000}
       loop={true}

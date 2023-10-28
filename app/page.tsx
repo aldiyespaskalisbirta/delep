@@ -25,26 +25,29 @@ export default async function Home() {
   const quote = await getQuote();
 
   return (
-    <main className="grid grid-cols-2">
-      <div className="bg-pink-300 w-full h-screen px-8">
-        <div className="m-8">
+    <main className="grid md:grid-cols-2">
+      <div className="bg-pink-300 w-full h-screen md:px-8">
+        <div className="m-8 flex flex-col items-center justify-center">
           <h1
-            className={`${engagement.className} text-[6rem] text-white w-1/2 text-center`}
+            className={`${engagement.className} text-[4rem] md:text-[6rem] text-white md:w-1/2 text-center`}
           >
             Iyes & Elep
           </h1>
-          <div className="flex justify-center items-center gap-2 w-1/2">
+          <div className="flex justify-center items-center gap-2 w-full md:w-1/2">
             <span className="border-2  h-0 w-full border-white" />
             <div>
-              <AiFillHeart size={32} className="text-white" />
+              <AiFillHeart size={50} className="text-white" />
             </div>
             <span className="border-2 h-0 w-full border-white" />
             <div></div>
             <div></div>
           </div>
-          <p className="w-1/2 text-4xl leading-snug font-semibold text-white mt-10">
+          <p className="text-center md:w-1/2 text-2xl md:text-4xl leading-snug font-semibold text-white mt-10">
             {quote[0].quote.toUpperCase()}
           </p>
+          <span className="absolute bottom-10 text-2xl md:text-4xl text-white mt-8">
+            September 26, 2023
+          </span>
         </div>
       </div>
       <div className="w-full h-screen relative">
