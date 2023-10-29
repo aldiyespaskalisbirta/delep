@@ -34,7 +34,7 @@ function Search() {
     window.location.href = searchURL;
   };
   return (
-    <div className="z-50 w-full px-5 md:px-20">
+    <div className="z-50 w-full px-5 lg:px-20">
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}

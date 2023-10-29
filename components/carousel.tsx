@@ -9,18 +9,18 @@ function CarouselSlider() {
       nextArrow={({ handleNext }) => <div></div>}
       navigation={({ setActiveIndex, activeIndex, length }) => <div></div>}
       autoplay={true}
-        autoplayDelay={2000}
+      autoplayDelay={2000}
       loop={true}
       className="w-full"
     >
       <Image
-        src="/assets/cappie1.jpeg"
+        src="/assets/cappie2.jpeg"
         alt="cappie"
         fill
         className="object-cover"
       />
       <Image
-        src="/assets/cappie2.jpeg"
+        src="/assets/cappie1.jpeg"
         alt="cappie"
         fill
         className="object-cover"

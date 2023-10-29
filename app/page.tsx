@@ -29,15 +29,15 @@ export default async function Home() {
 
   return (
     <main className="grid md:grid-cols-2">
-      <div className="bg-pink-300 w-full max-h-screen md:px-8 overflow-hidden">
+      <div className="bg-pink-300 w-full max-h-screen lg:px-8 overflow-hidden">
         <div className="relative m-8 flex flex-col h-screen items-center justify-center">
-          <div className="absolute flex flex-col items-center justify-center top-3 md:mx-2 w-full">
+          <div className="absolute flex flex-col items-center justify-center top-3 lg:mx-2 w-full">
             <h1
-              className={`${engagement.className} text-[4rem] md:text-[6rem] text-white text-center`}
+              className={`${engagement.className} text-[4rem] lg:text-[6rem] text-white text-center`}
             >
               Iyes & Elep
             </h1>
-            <div className="flex justify-center items-center gap-2 w-full md:w-1/2">
+            <div className="flex justify-center items-center gap-2 w-full lg:w-1/2">
               <span className="border-2  h-0 w-full border-white" />
               <div>
                 <AiFillHeart size={50} className="text-white" />
@@ -46,12 +46,12 @@ export default async function Home() {
             </div>
           </div>
           <div>
-            <p className="text-center text-2xl md:text-4xl leading-snug font-semibold text-white">
+            <p className="text-center text-2xl lg:text-4xl leading-snug font-semibold text-white">
               {quote[0].quote.toUpperCase()}
             </p>
           </div>
           <div className="absolute bottom-14 w-full flex items-center justify-center">
-            <span className="text-2xl md:text-4xl text-white mt-8">
+            <span className="text-2xl lg:text-4xl text-white mt-8">
               September 26, 2022
             </span>
           </div>
