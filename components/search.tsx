@@ -16,7 +16,7 @@ import {
 import { Input } from "@/components/ui/input";
 
 const formSchema = z.object({
-  query: z.string().min(1),
+  query: z.string(),
 });
 
 function Search() {
