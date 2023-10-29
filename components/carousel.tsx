@@ -9,7 +9,7 @@ function CarouselSlider() {
       nextArrow={({ handleNext }) => <div></div>}
       navigation={({ setActiveIndex, activeIndex, length }) => <div></div>}
       autoplay={true}
-      //   autoplayDelay={2000}
+        autoplayDelay={2000}
       loop={true}
       className="w-full"
     >
