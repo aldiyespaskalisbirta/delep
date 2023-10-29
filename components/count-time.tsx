@@ -47,19 +47,19 @@ function CountTime() {
   return (
     <div className="w-full h-full flex items-center justify-center bg-transparent z-50 absolute">
       <div className="flex gap-4">
-        <Card className="w-20 h-20 md:w-24 md:h-24 flex items-center flex-col gap-2 justify-center opacity-75">
+        <Card className="w-[4.5rem] h-[5rem] md:w-24 md:h-24 flex items-center flex-col gap-2 justify-center opacity-75">
           <h1 className="text-lg md:text-xl font-semibold">Days</h1>
           <span className="text-2xl font-bold">{formatNumber(days)}</span>
         </Card>
-        <Card className="w-20 h-20 md:w-24 md:h-24 flex items-center flex-col gap-2 justify-center opacity-75">
+        <Card className="w-[4.5rem] h-[5rem] md:w-24 md:h-24 flex items-center flex-col gap-2 justify-center opacity-75">
           <h1 className="text-lg md:text-xl font-semibold">Hours</h1>
           <span className="text-2xl font-bold">{formatNumber(hours)}</span>
         </Card>
-        <Card className="w-20 h-20 md:w-24 md:h-24 flex items-center flex-col gap-2 justify-center opacity-75">
+        <Card className="w-[4.5rem] h-[5rem] md:w-24 md:h-24 flex items-center flex-col gap-2 justify-center opacity-75">
           <h1 className="text-lg md:text-xl font-semibold">Minutes</h1>
           <span className="text-2xl font-bold">{formatNumber(minutes)}</span>
         </Card>
-        <Card className="w-20 h-20 md:w-24 md:h-24 flex items-center flex-col gap-2 justify-center opacity-75">
+        <Card className="w-[4.5rem] h-[5rem] md:w-24 md:h-24 flex items-center flex-col gap-2 justify-center opacity-75">
           <h1 className="text-lg md:text-xl font-semibold">Seconds</h1>
           <span className="text-2xl font-bold">{formatNumber(seconds)}</span>
         </Card>
