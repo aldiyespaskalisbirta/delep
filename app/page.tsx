@@ -1,9 +1,11 @@
-import Image from "next/image";
 import { Engagement } from "next/font/google";
+
 import { AiFillHeart } from "react-icons/ai";
-import CountTime from "../components/count-time";
+
+import CountTime from "@/components/count-time";
 import CarouselSlider from "@/components/carousel";
 import Search from "@/components/search";
+import Tab from "@/components/tab";
 
 const engagement = Engagement({ weight: ["400"], preload: false });
 
@@ -62,6 +64,7 @@ export default async function Home() {
         <div className="flex flex-col items-center justify-center space-y-12 w-full h-full">
           <CountTime />
           <Search />
+          <Tab />
         </div>
       </div>
     </main>
