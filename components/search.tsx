@@ -7,13 +7,12 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { AiFillHeart } from "react-icons/ai";
 
 const formSchema = z.object({
   query: z.string(),
@@ -54,10 +53,13 @@ function Search() {
           />
           <Button
             type="submit"
-            variant={"secondary"}
-            className="hover:bg-pink-300 hover:text-white"
+            variant={"ghost"}
+            className="hover:bg-transparent"
           >
-            Search
+            <AiFillHeart
+              size={50}
+              className="text-pink-400 absolute hover:scale-105 hover:text-pink-500 transition duration-300"
+            />
           </Button>
         </form>
       </Form>

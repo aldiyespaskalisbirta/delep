@@ -6,6 +6,7 @@ import CountTime from "@/components/count-time";
 import CarouselSlider from "@/components/carousel";
 import Search from "@/components/search";
 import Tab from "@/components/tab";
+import Image from "next/image";
 
 const engagement = Engagement({ weight: ["400"], preload: false });
 
@@ -40,7 +41,10 @@ export default async function Home() {
             <div className="flex justify-center items-center gap-2 w-full lg:w-1/2">
               <span className="border-2  h-0 w-full border-white" />
               <div>
-                <AiFillHeart size={50} className="text-white" />
+                <AiFillHeart
+                  size={50}
+                  className="text-white animate-ping duration-1000"
+                />
               </div>
               <span className="border-2 h-0 w-full border-white" />
             </div>
