@@ -6,7 +6,7 @@ function CountTime() {
   const [elapsedTime, setElapsedTime] = useState<number>(0);
 
   useEffect(() => {
-    const startDate: Date = new Date("2022-09-26T11:00:00");
+    const startDate: Date = new Date("2022-09-26T16:00:00");
     const timerInterval: NodeJS.Timeout = setInterval(() => {
       const currentDate: Date = new Date();
       const timeDifference: number =
